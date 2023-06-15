@@ -1,0 +1,37 @@
+DESTYTOJO lenteles suskurimas:
+
+--create table "Destytojas"(
+--"ID" int primary key,
+--"VARDAS" varchar(20) not null,
+--"PAVARDE" varchar(30) not null,
+--"SLAPTAZODIS" varchar(20) not null
+--);
+
+EGZAMINO lenteles suskurimas:
+
+--create table "Egzaminas"(
+--"ID" int not null primary key,
+--"DALYKO_ID" int not null,
+--"DESTYTOJO_ID" int not null,
+--"PAVADINIMAS" varchar(20) not null,
+--"DATA" timestamp,
+--constraint "fk_subjectId" foreign key ("DALYKO_ID") references "Dalykas"("ID"),
+--constraint "fk_teacherId" foreign key ("DESTYTOJO_ID") references "Destytojas"("ID")
+--);
+)
+
+
+VISU DESTYTOJU GAVIMAS:
+
+SELECT* FROM "Destytojas";
+
+
+DESTYTOJO VARDO gavimas:
+
+SELECT "vardas" FROM "Destytojas" WHERE "Destytojo_Id" = "1";
+
+
+VISU STUDENTU PAZYMIU GAVIMAS:
+
+SELECT "vardas", "pavarde", "ivertinimas" FROM "Studentas" LEFT OUTER JOI "Studento_Ivertinimas" ON "Id" = "Studento_id" WHERE "Egzamino_Id" = "12345678";
+
