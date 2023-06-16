@@ -14,8 +14,8 @@ public class Main {
         MongoDuomBaze mongoDuomBaze = new MongoDuomBaze();
         GeneravimasStudDest generuoti = new GeneravimasStudDest(faker, mongoDuomBaze);
 
-        //generuoti.GeneruotiDestytojus();
-        //generuoti.GeneruotiStudentus();
+        generuoti.GeneruotiDestytojus();
+        generuoti.GeneruotiStudentus();
 
         List<Studentas> studentai = mongoDuomBaze.getStudentuSarasas();
         List<Destytojas> destytojai = mongoDuomBaze.getDestytojuSarasas();

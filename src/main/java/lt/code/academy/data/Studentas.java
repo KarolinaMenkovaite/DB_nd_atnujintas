@@ -16,6 +16,7 @@ public class Studentas  {
     }
 
     public Studentas(String vardas, String vartotojoVardas, String slaptazodis) {
+       // this.studentoVardas////!!!!
     }
 
     public Studentas(ObjectId studentoID, String studentoVartotojoVardas, String studentoVardas, Studentas studentoSlaptazodis, List<String> ivertinimas) {
@@ -23,7 +24,7 @@ public class Studentas  {
         this.studentoVartotojoVardas = studentoVartotojoVardas;
         this.studentoVardas = studentoVardas;
         this.studentoSlaptazodis = studentoSlaptazodis;
-        Ivertinimas = ivertinimas;
+        this.Ivertinimas = ivertinimas;
     }
 
     public Studentas(String studentoVartotojoVardas, String studentoVardas, Studentas studentoSlaptazodis, List<String> ivertinimas) {
